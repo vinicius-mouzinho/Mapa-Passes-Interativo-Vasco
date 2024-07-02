@@ -2,8 +2,8 @@ import altair as alt
 import pandas as pd
 import streamlit as st
 import math
-import mplsoccer
 import numpy as np
+import mplsoccer
 
 def map_player(player_id):
     player_mapping = {
