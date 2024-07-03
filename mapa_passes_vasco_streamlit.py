@@ -79,6 +79,9 @@ st.write(
     Esse aplicativo mostra mapas de passe dos jogadores do Vasco no Brasileirão 2024.
     Ele mostra também o número de passes certos, de passes progressivos certos e a 
     porcentagem de conclusão dos passes. Explore-o abaixo!
+    
+    Obs.: nesse modelo, um passe progressivo é um passe cujo ponto final está, ao menos, 25% mais próximo
+    do gol adversário que seu ponto inicial.
     """
 )
 
