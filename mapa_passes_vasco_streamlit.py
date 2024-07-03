@@ -66,7 +66,7 @@ df3 = pd.read_csv("result Fluminense 2 - 1 Vasco da Gama.csv")
 df4 = pd.read_csv("result Vasco da Gama 0 - 4 Criciúma.csv")
 df5 = pd.read_csv("result Athletico-PR 1 - 0 Vasco da Gama.csv")
 df6 = pd.read_csv("result Vasco da Gama 2 - 1 Vitória.csv")
-#df7 = pd.read_csv("result Vasco da Gama 1 - 6 Flamengo.csv")
+df7 = pd.read_csv("result Flamengo 6 - 1 Vasco da Gama.csv")
 df8 = pd.read_csv("result Palmeiras 2 - 0 Vasco da Gama.csv")
 df9 = pd.read_csv("result Vasco da Gama 0 - 0 Cruzeiro.csv")
 df10 = pd.read_csv("result Juventude 2 - 0 Vasco da Gama.csv")
@@ -81,7 +81,7 @@ dataframes = [
     ("Rodada 4: Vasco da Gama 0 - 4 Criciúma", df4),
     ("Rodada 5: Athletico-PR 1 - 0 Vasco da Gama", df5),
     ("Rodada 6: Vasco da Gama 2 - 1 Vitória", df6),
-    #("Rodada 7: Vasco da Gama 1 - 6 Flamengo", df7),
+    ("Rodada 7: Vasco da Gama 1 - 6 Flamengo", df7),
     ("Rodada 8: Palmeiras 2 - 0 Vasco da Gama", df8),
     ("Rodada 9: Vasco da Gama 0 - 0 Cruzeiro", df9),
     ("Rodada 10: Juventude 2 - 0 Vasco da Gama", df10),
