@@ -1,3 +1,4 @@
+import io
 import altair as alt
 import pandas as pd
 import streamlit as st
@@ -220,5 +221,18 @@ if not dfV.empty:
     fig.patch.set_facecolor('#222222')
 
     st.pyplot(fig)
+
+    # Salvar a figura em um buffer de memória
+    buf = io.BytesIO()
+    fig.savefig(buf, format='png')
+    buf.seek(0)
+
+    # Botão para download da imagem
+    st.download_button(
+        label="Baixar imagem",
+        data=buf,
+        file_name="mapa_passes.png",
+        mime="image/png"
+    )
 else:
     st.write("Nenhum conjunto de dados selecionado ou os dados estão vazios.")
