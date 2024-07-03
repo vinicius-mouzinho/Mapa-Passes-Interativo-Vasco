@@ -60,19 +60,19 @@ st.write(
 )
 
 # Leitura dos dados
-df1 = pd.read_csv("result Vasco da Gama 2 - 1 Grêmio.csv")
-df2 = pd.read_csv("result Red Bull Bragantino 2 - 1 Vasco da Gama.csv")
-df3 = pd.read_csv("result Fluminense 2 - 1 Vasco da Gama.csv")
-df4 = pd.read_csv("result Vasco da Gama 0 - 4 Criciúma.csv")
-df5 = pd.read_csv("result Athletico-PR 1 - 0 Vasco da Gama.csv")
-df6 = pd.read_csv("result Vasco da Gama 2 - 1 Vitória.csv")
-df7 = pd.read_csv("result Vasco da Gama 1 - 6 Flamengo.csv")
-df8 = pd.read_csv("result Palmeiras 2 - 0 Vasco da Gama.csv")
-df9 = pd.read_csv("result Vasco da Gama 0 - 0 Cruzeiro.csv")
-df10 = pd.read_csv("result Juventude 2 - 0 Vasco da Gama.csv")
-df11 = pd.read_csv("result Vasco da Gama 4 - 1 São Paulo.csv")
-df12 = pd.read_csv("result Bahia 2 - 1 Vasco da Gama.csv")
-df13 = pd.read_csv("result Vasco da Gama 1 - 1 Botafogo.csv")
+df1 = pd.read_csv("C:/Users/Anderson/python_streamlit/Mapa-Passes-Interativo-Vasco/result Vasco da Gama 2 - 1 Grêmio.csv")
+df2 = pd.read_csv("C:/Users/Anderson/python_streamlit/Mapa-Passes-Interativo-Vasco/result Red Bull Bragantino 2 - 1 Vasco da Gama.csv")
+df3 = pd.read_csv("C:/Users/Anderson/python_streamlit/Mapa-Passes-Interativo-Vasco/result Fluminense 2 - 1 Vasco da Gama.csv")
+df4 = pd.read_csv("C:/Users/Anderson/python_streamlit/Mapa-Passes-Interativo-Vasco/result Vasco da Gama 0 - 4 Criciúma.csv")
+df5 = pd.read_csv("C:/Users/Anderson/python_streamlit/Mapa-Passes-Interativo-Vasco/result Athletico-PR 1 - 0 Vasco da Gama.csv")
+df6 = pd.read_csv("C:/Users/Anderson/python_streamlit/Mapa-Passes-Interativo-Vasco/result Vasco da Gama 2 - 1 Vitória.csv")
+df7 = pd.read_csv("C:/Users/Anderson/python_streamlit/Mapa-Passes-Interativo-Vasco/result Vasco da Gama 1 - 6 Flamengo.csv")
+df8 = pd.read_csv("C:/Users/Anderson/python_streamlit/Mapa-Passes-Interativo-Vasco/result Palmeiras 2 - 0 Vasco da Gama.csv")
+df9 = pd.read_csv("C:/Users/Anderson/python_streamlit/Mapa-Passes-Interativo-Vasco/result Vasco da Gama 0 - 0 Cruzeiro.csv")
+df10 = pd.read_csv("C:/Users/Anderson/python_streamlit/Mapa-Passes-Interativo-Vasco/result Juventude 2 - 0 Vasco da Gama.csv")
+df11 = pd.read_csv("C:/Users/Anderson/python_streamlit/Mapa-Passes-Interativo-Vasco/result Vasco da Gama 4 - 1 São Paulo.csv")
+df12 = pd.read_csv("C:/Users/Anderson/python_streamlit/Mapa-Passes-Interativo-Vasco/result Bahia 2 - 1 Vasco da Gama.csv")
+df13 = pd.read_csv("C:/Users/Anderson/python_streamlit/Mapa-Passes-Interativo-Vasco/result Vasco da Gama 1 - 1 Botafogo.csv")
 
 dataframes = [
     ("Rodada 1: Vasco da Gama 2 - 1 Grêmio", df1),
