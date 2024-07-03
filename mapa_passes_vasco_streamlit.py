@@ -49,6 +49,28 @@ def is_deep_completion(x, y):
 def calculate_total_xT(group):
     return group['xT'].sum()
 
+def group_consecutive_numbers(numbers):
+    ranges = []
+    temp = [numbers[0]]
+
+    for n in numbers[1:]:
+        if n == temp[-1] + 1:
+            temp.append(n)
+        else:
+            if len(temp) > 1:
+                ranges.append(f"{temp[0]} a {temp[-1]}")
+            else:
+                ranges.append(str(temp[0]))
+            temp = [n]
+
+    if len(temp) > 1:
+        ranges.append(f"{temp[0]} a {temp[-1]}")
+    else:
+        ranges.append(str(temp[0]))
+
+    return ", ".join(ranges)
+
+
 st.set_page_config(page_title="Mapas de passe do Vasco", page_icon="💢")
 st.title("💢 Mapas de passe do Vasco")
 st.write(
@@ -177,9 +199,12 @@ if not dfV.empty:
                   s=50, lw=1, zorder=2)
     
 
-    selected_rounds = ", ".join([name.split(" ")[1] for name in selected_options])
+    selected_rounds = [int(name.split(" ")[1]) for name in selected_options]
+    selected_rounds = sorted(selected_rounds)
+    grouped_rounds = group_consecutive_numbers(selected_rounds)
+
     fig.suptitle(f'Brasileirão 2024 | Vasco da Gama', fontsize=20, fontweight='bold', color='white')
-    subtitle = (f'Rodadas: {selected_rounds}')
+    subtitle = (f'Rodadas: {grouped_rounds}')
     fig.text(0.5, 0.93, subtitle, ha='center', fontsize = 14, color='white')
 
     axs['pitch'].set_title(f'Passes certos do {selected_player}', fontsize=18, color='white', pad=10)
@@ -188,9 +213,9 @@ if not dfV.empty:
     axs['pitch'].text(0.03, -0.05, f'{num_passesPJ1} passes progressivos', fontsize=14, color='#97c1e7', ha='left', va='bottom', fontweight='bold', transform=axs['pitch'].transAxes)
 
     note_text = "@Vasco_Analytics | Dados: Opta via WhoScored"
-    note_text_2 = "Passe progressivo: com ponto final no mínimo 25% mais próximo do gol do que o ponto inicial"
-    fig.text(-0.12, 0.04, note_text, fontsize=12, color='gray', ha='left', va='center', weight='bold')
-    fig.text(-0.12, 0.02, note_text_2, fontsize=9.5, color='gray', ha='left', va='center')
+    note_text_2 = "Passe progressivo: ponto final no mínimo 25% mais próximo do gol que o inicial"
+    fig.text(0, 0.04, note_text, fontsize=12, color='gray', ha='left', va='center', weight='bold')
+    fig.text(0, 0.02, note_text_2, fontsize=8, color='gray', ha='left', va='center', weight='bold')
 
     fig.patch.set_facecolor('#222222')
 
