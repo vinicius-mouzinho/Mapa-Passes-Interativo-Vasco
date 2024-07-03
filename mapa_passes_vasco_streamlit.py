@@ -75,19 +75,19 @@ df12 = pd.read_csv("result Bahia 2 - 1 Vasco da Gama.csv")
 df13 = pd.read_csv("result Vasco da Gama 1 - 1 Botafogo.csv")
 
 dataframes = [
-    ("Rodada 1: Vasco da Gama 2 - 1 Grêmio", df1),
-    ("Rodada 2: Red Bull Bragantino 2 - 1 Vasco da Gama", df2),
-    ("Rodada 3: Fluminense 2 - 1 Vasco da Gama", df3),
-    ("Rodada 4: Vasco da Gama 0 - 4 Criciúma", df4),
-    ("Rodada 5: Athletico-PR 1 - 0 Vasco da Gama", df5),
-    ("Rodada 6: Vasco da Gama 2 - 1 Vitória", df6),
-    ("Rodada 7: Vasco da Gama 1 - 6 Flamengo", df7),
-    ("Rodada 8: Palmeiras 2 - 0 Vasco da Gama", df8),
-    ("Rodada 9: Vasco da Gama 0 - 0 Cruzeiro", df9),
-    ("Rodada 10: Juventude 2 - 0 Vasco da Gama", df10),
-    ("Rodada 11: Vasco da Gama 4 - 1 São Paulo", df11),
-    ("Rodada 12: Bahia 2 - 1 Vasco da Gama", df12),
-    ("Rodada 13: Vasco da Gama 1 - 1 Botafogo", df13)
+    ("Rodada 1 - Vasco da Gama 2 - 1 Grêmio", df1),
+    ("Rodada 2 - Red Bull Bragantino 2 - 1 Vasco da Gama", df2),
+    ("Rodada 3 - Fluminense 2 - 1 Vasco da Gama", df3),
+    ("Rodada 4 - Vasco da Gama 0 - 4 Criciúma", df4),
+    ("Rodada 5 - Athletico-PR 1 - 0 Vasco da Gama", df5),
+    ("Rodada 6 - Vasco da Gama 2 - 1 Vitória", df6),
+    ("Rodada 7 - Vasco da Gama 1 - 6 Flamengo", df7),
+    ("Rodada 8 - Palmeiras 2 - 0 Vasco da Gama", df8),
+    ("Rodada 9 - Vasco da Gama 0 - 0 Cruzeiro", df9),
+    ("Rodada 10 - Juventude 2 - 0 Vasco da Gama", df10),
+    ("Rodada 11 - Vasco da Gama 4 - 1 São Paulo", df11),
+    ("Rodada 12 - Bahia 2 - 1 Vasco da Gama", df12),
+    ("Rodada 13 - Vasco da Gama 1 - 1 Botafogo", df13)
 ]
 
 # Concatenar todos os dataframes para obter a lista completa de jogadores
@@ -175,8 +175,12 @@ if not dfV.empty:
 
     pitch.scatter(dfPass1P['endX'], dfPass1P['endY'], color='black', edgecolor='#97c1e7', ax=axs['pitch'],
                   s=50, lw=1, zorder=2)
+    
 
-    fig.suptitle('Brasileirão 2024 | Rodadas:', fontsize=20, fontweight='bold', color='white')
+    selected_rounds = ", ".join([name.split(" ")[1] for name in selected_options])
+    fig.suptitle(f'Brasileirão 2024 | Vasco da Gama', fontsize=20, fontweight='bold', color='white')
+    subtitle = (f'Rodadas: {selected_rounds}')
+    fig.text(0.5, 0.93, subtitle, ha='center', fontsize = 14, color='white')
 
     axs['pitch'].set_title(f'Passes certos do {selected_player}', fontsize=18, color='white', pad=10)
 
@@ -184,8 +188,8 @@ if not dfV.empty:
     axs['pitch'].text(0.03, -0.05, f'{num_passesPJ1} passes progressivos', fontsize=14, color='#97c1e7', ha='left', va='bottom', fontweight='bold', transform=axs['pitch'].transAxes)
 
     note_text = "@Vasco_Analytics | Dados: Opta via WhoScored"
-    note_text_2 = "Passes progressivos: passes cujo ponto final está no mínimo 25% mais próximo do gol do que o ponto inicial"
-    fig.text(-0.12, 0.04, note_text, fontsize=12, color='gray', ha='left', va='center')
+    note_text_2 = "Passe progressivo: com ponto final no mínimo 25% mais próximo do gol do que o ponto inicial"
+    fig.text(-0.12, 0.04, note_text, fontsize=12, color='gray', ha='left', va='center', weight='bold')
     fig.text(-0.12, 0.02, note_text_2, fontsize=9.5, color='gray', ha='left', va='center')
 
     fig.patch.set_facecolor('#222222')
