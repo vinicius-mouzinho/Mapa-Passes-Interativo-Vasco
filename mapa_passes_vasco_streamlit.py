@@ -204,8 +204,8 @@ if not dfV.empty:
     grouped_rounds = group_consecutive_numbers(selected_rounds)
 
     fig.suptitle(f'Brasileirão 2024 | Vasco da Gama', fontsize=20, fontweight='bold', color='white')
-    subtitle = (f'Rodadas: {grouped_rounds}')
-    fig.text(0.5, 0.93, subtitle, ha='center', fontsize = 14, color='white')
+    subtitle = (f'Rodadas {grouped_rounds}')
+    fig.text(0.5, 0.92, subtitle, ha='center', fontsize = 14, color='white')
 
     axs['pitch'].set_title(f'Passes certos do {selected_player}', fontsize=18, color='white', pad=10)
 
