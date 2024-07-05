@@ -41,7 +41,7 @@ def map_player(player_id):
     return player_mapping.get(player_id, 'Unknown')
 
 def distance_to_goal(x, y):
-    goal_x, goal_y = 110, 50
+    goal_x, goal_y = 100, 50
     return math.sqrt((x - goal_x)**2 + (y - goal_y)**2)
 
 def is_deep_completion(x, y):
