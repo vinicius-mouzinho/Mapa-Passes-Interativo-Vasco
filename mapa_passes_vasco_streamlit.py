@@ -169,8 +169,8 @@ if not dfV.empty:
     dfCRVGPass['dist_to_goal_after'] = dfCRVGPass.apply(lambda row: distance_to_goal(row['endX'], row['endY']), axis=1)
 
     progressive_threshold = 0.75
-    dfCRVGPass['progressive_pass'] = (dfCRVGPass['dist_to_goal_after'] < progressive_threshold * dfCRVGPass['dist_to_goal_before']) | \
-                                    ((dfCRVGPass['endX'].between(83, 100)) & (dfCRVGPass['endY'].between(21.1, 78.9)))
+    dfCRVGPass['progressive_pass'] = ((dfCRVGPass['dist_to_goal_after'] < progressive_threshold * dfCRVGPass['dist_to_goal_before']) | \
+                                    ((dfCRVGPass['endX'].between(83, 100)) & (dfCRVGPass['endY'].between(21.1, 78.9)))) & (dfCRVGPass['endX'] > dfCRVGPass['x'])
 
     correct_progressive_pass = dfCRVGPass[(dfCRVGPass['progressive_pass'] == True) & (dfCRVGPass['outcomeType/displayName'] == 'Successful')]
     progressive_pass_count = correct_progressive_pass.groupby('Player')['progressive_pass'].sum()
