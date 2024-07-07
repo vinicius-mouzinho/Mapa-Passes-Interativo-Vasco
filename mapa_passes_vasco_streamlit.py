@@ -81,7 +81,7 @@ st.write(
     porcentagem de conclusão dos passes. Explore-o abaixo!
     
     Obs.: nesse modelo, um passe progressivo é um passe cujo ponto final está, ao menos, 25% mais próximo
-    do gol adversário que seu ponto inicial.
+    do gol adversário que seu ponto inicial ou que tem seu ponto final na área.
     """
 )
 
@@ -100,6 +100,7 @@ df11 = pd.read_csv("result Vasco da Gama 4 - 1 São Paulo.csv")
 df12 = pd.read_csv("result Bahia 2 - 1 Vasco da Gama.csv")
 df13 = pd.read_csv("result Vasco da Gama 1 - 1 Botafogo.csv")
 df14 = pd.read_csv("result Vasco da Gama 2 - 0 Fortaleza.csv")
+df15 = pd.read_csv("result Internacional 1 - 2 Vasco da Gama.csv")
 
 dataframes = [
     ("Rodada 1 - Vasco da Gama 2 - 1 Grêmio", df1),
@@ -115,7 +116,8 @@ dataframes = [
     ("Rodada 11 - Vasco da Gama 4 - 1 São Paulo", df11),
     ("Rodada 12 - Bahia 2 - 1 Vasco da Gama", df12),
     ("Rodada 13 - Vasco da Gama 1 - 1 Botafogo", df13),
-    ("Rodada 14 - Vasco da Gama 2 - 0 Fortaleza", df14)
+    ("Rodada 14 - Vasco da Gama 2 - 0 Fortaleza", df14),
+    ("Rodada 15 - Internacilnal 1 - 2 Vasco da Gama", df15)
 ]
 
 # Concatenar todos os dataframes para obter a lista completa de jogadores
