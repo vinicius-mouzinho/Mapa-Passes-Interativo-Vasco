@@ -36,7 +36,9 @@ def map_player(player_id):
         436559: 'Clayton',
         373449: 'Hugo Moura',
         149574: 'Victor Luís',
-        515814: 'Estrella'
+        515814: 'Estrella',
+        471644: 'Lyncon',
+        515815: 'Leandrinho'
     }
     return player_mapping.get(player_id, 'Unknown')
 
