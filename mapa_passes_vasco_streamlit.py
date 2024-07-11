@@ -103,6 +103,7 @@ df12 = pd.read_csv("result Bahia 2 - 1 Vasco da Gama.csv")
 df13 = pd.read_csv("result Vasco da Gama 1 - 1 Botafogo.csv")
 df14 = pd.read_csv("result Vasco da Gama 2 - 0 Fortaleza.csv")
 df15 = pd.read_csv("result Internacional 1 - 2 Vasco da Gama .csv")
+df16 = pd.read_csv("result Vasco da Gama 2 - 0 Corinthians.csv")
 
 dataframes = [
     ("Rodada 1 - Vasco da Gama 2 - 1 Grêmio", df1),
@@ -119,7 +120,8 @@ dataframes = [
     ("Rodada 12 - Bahia 2 - 1 Vasco da Gama", df12),
     ("Rodada 13 - Vasco da Gama 1 - 1 Botafogo", df13),
     ("Rodada 14 - Vasco da Gama 2 - 0 Fortaleza", df14),
-    ("Rodada 15 - Internacional 1 - 2 Vasco da Gama", df15)
+    ("Rodada 15 - Internacional 1 - 2 Vasco da Gama", df15),
+    ("Rodada 16 - Vasco da Gama 2 - 0 Corinthians", df16)
 ]
 
 # Concatenar todos os dataframes para obter a lista completa de jogadores
