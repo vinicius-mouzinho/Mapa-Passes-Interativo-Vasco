@@ -103,7 +103,7 @@ df12 = pd.read_csv("result Bahia 2 - 1 Vasco da Gama.csv")
 df13 = pd.read_csv("result Vasco da Gama 1 - 1 Botafogo.csv")
 df14 = pd.read_csv("result Vasco da Gama 2 - 0 Fortaleza.csv")
 df15 = pd.read_csv("result Internacional 1 - 2 Vasco da Gama .csv")
-df16 = pd.read_csv("result Vasco da Gama 2 - 0 Corinthians.csv")
+df16 = pd.read_csv("result Vasco da Gama 2 - 0 Corinthians .csv")
 
 dataframes = [
     ("Rodada 1 - Vasco da Gama 2 - 1 Grêmio", df1),
