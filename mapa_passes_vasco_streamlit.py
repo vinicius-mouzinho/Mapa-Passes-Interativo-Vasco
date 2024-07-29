@@ -38,7 +38,12 @@ def map_player(player_id):
         149574: 'Victor Luís',
         515814: 'Estrella',
         471644: 'Lyncon',
-        515815: 'Leandrinho'
+        515815: 'Leandrinho',
+        80767: 'Philippe Coutinho',
+        433514: 'Emerson Rodríguez',
+        40748: 'Alex Teixeira',
+        472121: 'GB'
+
     }
     return player_mapping.get(player_id, 'Unknown')
 
@@ -105,6 +110,9 @@ df14 = pd.read_csv("result Vasco da Gama 2 - 0 Fortaleza.csv")
 df15 = pd.read_csv("result Internacional 1 - 2 Vasco da Gama .csv")
 df16 = pd.read_csv("result Vasco da Gama 2 - 0 Corinthians .csv")
 df17 = pd.read_csv("result Atlético GO 0 - 1 Vasco da Gama .csv")
+df18 = pd.read_csv("result Atlético-MG 2 - 0 Vasco da Gama .csv")
+df20 = pd.read_csv("result Grêmio 1 - 0 Vasco da Gama .csv")
+
 
 dataframes = [
     ("Rodada 1 - Vasco da Gama 2 - 1 Grêmio", df1),
@@ -123,7 +131,10 @@ dataframes = [
     ("Rodada 14 - Vasco da Gama 2 - 0 Fortaleza", df14),
     ("Rodada 15 - Internacional 1 - 2 Vasco da Gama", df15),
     ("Rodada 16 - Vasco da Gama 2 - 0 Corinthians", df16),
-    ("Rodada 17 - Atlético GO 0 - 1 Vasco da Gama", df17)
+    ("Rodada 17 - Atlético GO 0 - 1 Vasco da Gama", df17),
+    ("Rodada 18 - Atlético-MG 2 - 0 Vasco da Gama", df18),
+    ("Rodada 20 - Grêmio 1 - 0 Vasco da Gama", df20)
+
 ]
 
 # Concatenar todos os dataframes para obter a lista completa de jogadores
