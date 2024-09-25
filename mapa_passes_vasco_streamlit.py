@@ -1,9 +1,7 @@
 import io
-import altair as alt
 import pandas as pd
 import streamlit as st
 import math
-import numpy as np
 import mplsoccer
 
 def map_player(player_id):
@@ -112,6 +110,14 @@ df16 = pd.read_csv("result Vasco da Gama 2 - 0 Corinthians .csv")
 df17 = pd.read_csv("result Atlético GO 0 - 1 Vasco da Gama .csv")
 df18 = pd.read_csv("result Atlético-MG 2 - 0 Vasco da Gama .csv")
 df20 = pd.read_csv("result Grêmio 1 - 0 Vasco da Gama .csv")
+df21 = pd.read_csv("result Vasco da Gama 2 - 2 Red Bull Bragantino .csv")
+df22 = pd.read_csv("result Vasco da Gama 2 - 0 Fluminense .csv")
+df23 = pd.read_csv("result Criciúma 2 - 2 Vasco da Gama .csv")
+df24 = pd.read_csv("result Vasco da Gama 2 - 1 Athletico-PR .csv")
+df25 = pd.read_csv("result Vitória 0 - 1 Vasco da Gama .csv")
+df26 = pd.read_csv("result Flamengo 1 - 1 Vasco da Gama .csv")
+df27 = pd.read_csv("result Vasco da Gama 0 - 1 Palmeiras .csv")
+
 
 
 dataframes = [
@@ -133,7 +139,15 @@ dataframes = [
     ("Rodada 16 - Vasco da Gama 2 - 0 Corinthians", df16),
     ("Rodada 17 - Atlético GO 0 - 1 Vasco da Gama", df17),
     ("Rodada 18 - Atlético-MG 2 - 0 Vasco da Gama", df18),
-    ("Rodada 20 - Grêmio 1 - 0 Vasco da Gama", df20)
+    ("Rodada 20 - Grêmio 1 - 0 Vasco da Gama", df20),
+    ("Rodada 21 - Vasco da Gama 2 - 2 Red Bull Bragantino", df21),
+    ("Rodada 22 - Vasco da Gama 2 - 0 Fluminense", df22),
+    ("Rodada 23 - Criciúma 2 - 2 Vasco da Gama", df23),
+    ("Rodada 24 - Vasco da Gama 2 - 1 Athletico-PR", df24),
+    ("Rodada 24 - Vitória 0 - 1 Vasco da Gama", df25),
+    ("Rodada 25 - Flamengo 1 - 1 Vasco da Gama", df26),
+    ("Rodada 26 - Vasco da Gama 0 - 1 Palmeiras", df27)
+
 
 ]
 
