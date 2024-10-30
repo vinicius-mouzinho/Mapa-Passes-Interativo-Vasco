@@ -152,7 +152,7 @@ dataframes = [
     ("Rodada 24 - Vasco da Gama 2 - 1 Athletico-PR", df24),
     ("Rodada 25 - Vitória 0 - 1 Vasco da Gama", df25),
     ("Rodada 26 - Flamengo 1 - 1 Vasco da Gama", df26),
-    ("Rodada 27 - Vasco da Gama 0 - 1 Palmeiras", df27)
+    ("Rodada 27 - Vasco da Gama 0 - 1 Palmeiras", df27),
     ("Rodada 28 - Cruzeiro 1 - 1 Vasco da Gama", df28),
     ("Rodada 29 - Vasco da Gama 1 - 1 Juventude", df29),
     ("Rodada 30 - São Paulo 3 - 0 Vasco da Gama", df30),
