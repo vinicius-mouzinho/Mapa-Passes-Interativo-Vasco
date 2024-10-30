@@ -109,6 +109,7 @@ df15 = pd.read_csv("result Internacional 1 - 2 Vasco da Gama .csv")
 df16 = pd.read_csv("result Vasco da Gama 2 - 0 Corinthians .csv")
 df17 = pd.read_csv("result Atlético GO 0 - 1 Vasco da Gama .csv")
 df18 = pd.read_csv("result Atlético-MG 2 - 0 Vasco da Gama .csv")
+df19 = pd.read_csv("result Vasco da Gama 1 - 0 Cuiaba .csv")
 df20 = pd.read_csv("result Grêmio 1 - 0 Vasco da Gama .csv")
 df21 = pd.read_csv("result Vasco da Gama 2 - 2 Red Bull Bragantino .csv")
 df22 = pd.read_csv("result Vasco da Gama 2 - 0 Fluminense .csv")
@@ -117,6 +118,10 @@ df24 = pd.read_csv("result Vasco da Gama 2 - 1 Athletico-PR .csv")
 df25 = pd.read_csv("result Vitória 0 - 1 Vasco da Gama .csv")
 df26 = pd.read_csv("result Flamengo 1 - 1 Vasco da Gama .csv")
 df27 = pd.read_csv("result Vasco da Gama 0 - 1 Palmeiras .csv")
+df28 = pd.read_csv("result Cruzeiro 1 - 1 Vasco da Gama .csv")
+df29 = pd.read_csv("result Vasco da Gama 1 - 1 Juventude .csv")
+df30 = pd.read_csv("result São Paulo 3 - 0 Vasco da Gama .csv")
+df31 = pd.read_csv("result Vasco da Gama 3 - 2 Bahia .csv")
 
 
 
