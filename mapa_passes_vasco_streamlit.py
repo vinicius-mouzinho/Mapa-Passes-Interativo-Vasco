@@ -144,14 +144,19 @@ dataframes = [
     ("Rodada 16 - Vasco da Gama 2 - 0 Corinthians", df16),
     ("Rodada 17 - Atlético GO 0 - 1 Vasco da Gama", df17),
     ("Rodada 18 - Atlético-MG 2 - 0 Vasco da Gama", df18),
+    ("Rodada 19 - Vasco da Gama 1 - 0 Cuiabá", df19),
     ("Rodada 20 - Grêmio 1 - 0 Vasco da Gama", df20),
     ("Rodada 21 - Vasco da Gama 2 - 2 Red Bull Bragantino", df21),
     ("Rodada 22 - Vasco da Gama 2 - 0 Fluminense", df22),
     ("Rodada 23 - Criciúma 2 - 2 Vasco da Gama", df23),
     ("Rodada 24 - Vasco da Gama 2 - 1 Athletico-PR", df24),
-    ("Rodada 24 - Vitória 0 - 1 Vasco da Gama", df25),
-    ("Rodada 25 - Flamengo 1 - 1 Vasco da Gama", df26),
-    ("Rodada 26 - Vasco da Gama 0 - 1 Palmeiras", df27)
+    ("Rodada 25 - Vitória 0 - 1 Vasco da Gama", df25),
+    ("Rodada 26 - Flamengo 1 - 1 Vasco da Gama", df26),
+    ("Rodada 27 - Vasco da Gama 0 - 1 Palmeiras", df27)
+    ("Rodada 28 - Cruzeiro 1 - 1 Vasco da Gama", df28),
+    ("Rodada 29 - Vasco da Gama 1 - 1 Juventude", df29),
+    ("Rodada 30 - São Paulo 3 - 0 Vasco da Gama", df30),
+    ("Rodada 31 - Vasco da Gama 3 - 2 Bahia", df31),
 
 
 ]
