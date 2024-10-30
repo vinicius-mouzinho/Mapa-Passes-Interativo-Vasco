@@ -211,7 +211,7 @@ if not dfV.empty:
     dfCRVGPass['dist_to_goal_before'] = dfCRVGPass.apply(lambda row: distance_to_goal(row['x'], row['y']), axis=1)
     dfCRVGPass['dist_to_goal_after'] = dfCRVGPass.apply(lambda row: distance_to_goal(row['endX'], row['endY']), axis=1)
 
-    progressive_threshold = 0.75
+    progressive_threshold = 0.825
 
     dfCRVGPass['progressive_pass'] = (
     ((dfCRVGPass['dist_to_goal_after'] < progressive_threshold * dfCRVGPass['dist_to_goal_before']) | 
@@ -267,7 +267,7 @@ if not dfV.empty:
     axs['pitch'].text(0.03, -0.05, f'{num_passesPJ1} passes progressivos', fontsize=14, color='#97c1e7', ha='left', va='bottom', fontweight='bold', transform=axs['pitch'].transAxes)
 
     note_text = "@Vasco_Analytics | Dados: Opta via WhoScored"
-    note_text_2 = "Passe progressivo: ponto final no mínimo 25% mais próximo do gol que o inicial"
+    note_text_2 = "Passe progressivo: ponto final no mínimo 20% mais próximo do gol que o inicial"
     fig.text(0, 0.04, note_text, fontsize=12, color='gray', ha='left', va='center', weight='bold')
     fig.text(0, 0.02, note_text_2, fontsize=8, color='gray', ha='left', va='center', weight='bold')
 
