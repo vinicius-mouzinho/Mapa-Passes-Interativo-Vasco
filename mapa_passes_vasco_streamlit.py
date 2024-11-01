@@ -40,7 +40,9 @@ def map_player(player_id):
         80767: 'Philippe Coutinho',
         433514: 'Emerson Rodríguez',
         40748: 'Alex Teixeira',
-        472121: 'GB'
+        472121: 'GB',
+        40989: 'Souza',
+        486855: 'Maxime Dominguez'
 
     }
     return player_mapping.get(player_id, 'Unknown')
@@ -85,7 +87,7 @@ st.write(
     Ele mostra também o número de passes certos, de passes progressivos certos e a 
     porcentagem de conclusão dos passes. Explore-o abaixo!
     
-    Obs.: nesse modelo, um passe progressivo é um passe cujo ponto final está, ao menos, 25% mais próximo
+    Obs.: nesse modelo, um passe progressivo é um passe cujo ponto final está, ao menos, 20% mais próximo
     do gol adversário que seu ponto inicial ou que tem seu ponto final na área.
     """
 )
